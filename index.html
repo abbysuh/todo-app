@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To Do App</title>
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container heading">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>To Do App</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-6 to-do">
+      <h2>To Do</h2>
+      <form action="" name="toDoInput">
+        <textarea type="text" class="form-control" rows="3" placeholder="Today I need to do..."></textarea>
+        <input class="btn btn-primary" type="submit">
+      </form>
+      <ul id="to-dos"></ul>
+    </div>
+    <div class="col-md-6 col-sm-6 done">
+      <h2>Done</h2>
+      <ul id="done-items"></ul>
+    </div>
+  </div>
+</div>
+
+<script src="js/scripts.js" charset="utf-8"></script>
+<script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" charset="utf-8"></script>
+
+</body>
+</html>
