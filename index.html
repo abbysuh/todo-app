@@ -18,22 +18,42 @@
     </div>
   </div>
 </div>
-<div class="container">
+<div class="toDoButton">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Add a To Do
+</button>
+</div>
+<div class="container add-to-do">
   <div class="row">
     <div class="col-md-6 col-sm-6 to-do">
       <h2>To Do</h2>
-      <form action="" name="toDoInput">
-        <textarea type="text" class="form-control" rows="3" placeholder="Today I need to do..."></textarea>
-        <input class="btn btn-primary" type="submit">
-      </form>
-      <ul id="to-dos"></ul>
+      <ul class="myUl" id="toDos">
+  
+      </ul>
     </div>
     <div class="col-md-6 col-sm-6 done">
       <h2>Done</h2>
-      <ul id="done-items"></ul>
+      <ul id="doneItems"></ul>
     </div>
   </div>
 </div>
+
+<div class="modal fade"  id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Enter your to do!</h4>
+      </div>
+      <div class="modal-body">
+        <form action="" name="toDoInput">
+          <textarea type="text" name="toDoText" id="toDoText" class="form-control" rows="3" placeholder="Today I need to do..."></textarea>
+          <input class="btn btn-primary" type="submit">
+        </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <script src="js/scripts.js" charset="utf-8"></script>
 <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
